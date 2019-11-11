@@ -1,0 +1,314 @@
+
+/* BANNER */
+
+section.banner {
+    width: 100%;
+}
+
+section.banner .slider .item{
+    height: 454px;
+}
+
+section.banner .info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section.banner .info .card {
+    height: 384px;
+    box-sizing: border-box;
+    box-shadow: 1px 4px 10px #808080;
+    position: absolute;
+    top: 336px;
+    width: 252px;
+    background: #fff;
+}
+
+section.banner .info .card .info_box {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section.banner .info .card .text {
+    color: #e95200;
+    font-size: 32px;
+    font-family: Montserrat;
+    font-weight: bold;
+    width: 115px;
+    height: 78px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    text-align: left;
+}
+
+section.banner .info .card .itens {
+    display: flex;
+    flex-direction: row;
+    width: 115px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+section.banner .info .card .itens .point {
+    width: 8px;
+    height: 8px;
+    background: #e95200;
+    margin: 5px;
+}
+
+section.banner .info .card .card_border {
+    width: 134px;
+    height: 28px;
+    margin-left: 30px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    background: #ea5600 0% 0% no-repeat padding-box;
+}
+
+section.banner .info .card p {
+    color: #e95200;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: Montserrat;
+    width: 200px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+section.banner .info .box {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    color: #0062cd;
+    font-family: Montserrat, serif;
+    font-weight: bold;
+    padding: 10px;
+    border-left: 2px solid #808080;
+}
+
+section.banner .info span p {
+    font-weight: normal;
+    color: #808080;
+}
+
+section.banner .info .box .home {
+    background:url(/assets/site/img/home.svg);
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    grid-column: 1;
+}
+
+section.banner .info .box .drop {
+    background:url(/assets/site/img/drop.svg);
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: center; 
+    width: 80px;
+    height: 80px;
+    grid-column: 1;
+}
+
+section.banner .info .box .lines {
+    background:#0062cd url(/assets/site/img/lines.svg);
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    grid-column: 1;
+}
+
+/* TEXTO */
+
+section.texto {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section.texto p {
+    color:#808080;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* UTILITARIOS */
+
+section.utilitarios {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+section.utilitarios h2 {
+    color: #808080;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+section.utilitarios .itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px;
+}
+
+section.utilitarios .itens .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color: #0062cd;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+section.utilitarios .itens .image {
+    width: 114px;
+    height: 114px;
+    box-sizing: border-box;
+    background: #0062cd;
+    margin: 15px;
+}
+
+section.utilitarios .itens .cobertura {
+    background-image: url(/assets/site/img/paint-brush.svg);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center; 
+}
+
+section.utilitarios .itens .textura {
+    background-image: url(/assets/site/img/lines.svg);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center; 
+}
+
+section.utilitarios .itens .tinta {
+    background-image: url(/assets/site/img/fill-color.svg);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center; 
+}
+
+section.utilitarios .itens .selador {
+    background-image: url(/assets/site/img/paint-bucket.svg);
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center; 
+}
+
+/* SLIDE */
+
+section.slide {
+    width: 100%;
+    height: 600px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+section.slide .itens {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+section.slide h2 {
+    color: #808080;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+section.slide p {
+    color: #808080;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* DICAS */
+
+section.dicas {
+    background: linear-gradient(180deg, #0062cd 40%,#fff 40%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+
+section.dicas .icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+section.dicas img {
+    max-width: 100%;
+    box-sizing: border-box;
+    height: 80px;
+}
+
+section.dicas h2 {
+    font-size: 30px;
+    padding: 15px;
+}
+
+section.dicas .itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.blog > .image > .block > .description{
+   width: 220px;
+   height: 36px;
+   background: #0062cd;
+   font-family: Montserrat;
+   margin: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.blog .action{
+    text-align: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10%;
+}
+
+.blog .image {
+    width: 330px;
+    height: 330px;
+    box-sizing: border-box;
+    margin: 15px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+

@@ -1,0 +1,256 @@
+/* GLOBAL */
+
+:root{
+    --color-primary: #f79e10;
+    --color-secondary: #2562cc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-content{
+    flex: 1
+}
+
+.site-container
+{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.border {
+    width: 100px;
+    height: 1px;
+    border-top: 3px solid #0062cd;
+    margin: 0 auto;  
+}
+
+h2 {
+    font-size: 30px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.btn {
+    color: #fff;
+    background-color: #0062cd;
+    font-size: 18px;
+    padding: 10px;
+    width: 146px;
+    border: none;
+    box-shadow: 0px 3px 6px #00000029;
+    font-family: Montserrat, sans-serif;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:active{
+    transform: translateY(2px);
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next{
+    right: 0;
+}
+
+/* HEADER */
+
+.header {
+    background:#fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 120px;
+    position: relative;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.header label {
+    margin: 0 40px 0 0;
+    font-size: 32px;
+    display: none;
+}
+
+.header #toggle {
+    display: none;
+}
+
+.header .brand {
+    display: grid;
+    color: #0062cd;
+    font-size:37px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:800;
+}
+
+.header .brand span {
+    color:#808080;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+}
+
+
+.paleta-container{
+    position: relative;
+    width: 110px;
+    height: 100%;
+    align-self: flex-start;
+}
+.paleta {
+    background:#0062cd;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 150px;
+    right: 0
+    
+}
+.paleta-container .paleta .icon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.navbar .paleta .icon img{
+   width: 80px;
+   height: 80px;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 30px;
+}
+
+.navbar ul li {
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.navbar ul li a {
+    color: #808080;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    display: flex;
+}
+
+.navbar ul li a i {
+    color: #0062cd;
+    margin-right: 5px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #7b7b7b;
+    position: relative;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.footer div {
+    margin: 15px;
+}
+
+.footer h2 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 30px;
+}
+
+.footer .produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer .produtos a {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+}
+
+.footer .contato {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.site-banner{
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.site-banner .site-banner-text
+{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.site-banner .site-banner-text > h1
+{
+    font-size: 3em;
+    font-weight: 900;
+    text-shadow: 0 0px 1px #000;
+}
+
+.site-banner .site-banner-bar{
+    height: 13px;
+    background-color: var(--color-primary);
+    background-image: linear-gradient(to left, transparent 44%, var(--color-secondary) 44%);
+}
+
+

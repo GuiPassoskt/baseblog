@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css?family=Alice:400');
+
+@import "variables";
+
+@import "node_modules/flexboxgrid/css/flexboxgrid";
+
+@import "buefy";
+
+
+body{
+    font-family: Tahoma, Arial !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+
+.admin-layout-wrap {
+    display: flex;
+    min-height: 100vh;
+    
+    .admin-sidebar {
+        width: 250px;
+        background-color: $admin-sidebar-background;
+        padding: 15px;
+        @media (max-width: $tablet) {
+            position: fixed;
+            height: 100%;
+            z-index: 5;
+            transform: translateX(-100%);
+            transition: all 500ms ease;
+
+            &.is-mobile-open{
+                transform: translateX(0);
+            }
+        }
+    }
+
+    .admin-content {
+        flex: 1;
+        padding: 30px;
+        max-width: 100%;
+        // overflow: hidden;
+
+    }
+
+}
+
+$rotate-flip: 180deg;
+
+.mobile-menu-control{
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 15px;
+    transition: all 500ms ease;
+
+    &.is-flip-180{
+        transform: rotate(-$rotate-flip * 3);
+    
+    }
+}
+
+.route-transaction-enter{
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.route-transaction-enter-active{
+    transition: all 400ms ease;
+}
+
+.route-transaction-enter-to{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+// .route-transaction-leave{
+//     opacity: 1;
+// }
+
+// .route-transaction-leave-active{
+//     transition: all 250ms ease; 
+// }
+
+
+// .route-transaction-leave-to{
+//     transform: scale(0);
+//     opacity: 0;
+// }
